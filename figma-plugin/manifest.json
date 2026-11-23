@@ -1,0 +1,9 @@
+{
+  "name": "SchoolScore – sync from site",
+  "id": "schoolscore-sync-local",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchoolScore – Know the school before you enroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/icons/logo.svg" alt="">SchoolScore</a>
+      <nav class="nav">
+        <a href="schools.html">Schools</a>
+        <a href="about.html">About us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <h1>Know the school before you enroll.</h1>
+          <p class="hero-lead">Read what students, parents and teachers say about a school, then add your own review in two minutes.</p>
+          <form class="search" action="schools.html">
+            <label class="search-input">
+              <img src="assets/icons/search.svg" alt="">
+              <input type="text" placeholder="School name or city" aria-label="School name or city">
+            </label>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/img/hero-keplera.jpg" alt="Gymnázium Jana Keplera building in Prague">
+          <figcaption>Gymnázium Jana Keplera, Prague</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Top 5 -->
+    <section class="top5">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">This month’s top 5</h2>
+            <p>Ranked by average rating, minimum 50 reviews</p>
+          </div>
+          <a class="link-accent" href="schools.html">Full ranking →</a>
+        </div>
+
+        <ol class="school-list">
+          <li>
+            <a class="school-row" href="school.html">
+              <span class="school-rank">1</span>
+              <span class="school-thumb"><img src="assets/img/smichovska.jpg" alt=""></span>
+              <span class="school-info">
+                <span class="school-name">Smíchovská střední škola</span>
+                <span class="school-meta"><span>Prague</span><span>·</span><span>SPŠ</span></span>
+              </span>
+              <span class="school-rating">
+                <span class="school-score"><img src="assets/icons/star.svg" alt="">4.8</span>
+                <span class="school-reviews">312 reviews</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="school-row" href="school.html">
+              <span class="school-rank">2</span>
+              <span class="school-thumb"><img src="assets/img/jaroska.jpg" alt=""></span>
+              <span class="school-info">
+                <span class="school-name">Gymnázium Brno, třída Kapitána Jaroše</span>
+                <span class="school-meta"><span>Brno</span><span>·</span><span>Gymnázium</span></span>
+              </span>
+              <span class="school-rating">
+                <span class="school-score"><img src="assets/icons/star.svg" alt="">4.7</span>
+                <span class="school-reviews">268 reviews</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="school-row" href="school.html">
+              <span class="school-rank">3</span>
+              <span class="school-thumb"><img src="assets/img/oa-bati.jpg" alt=""></span>
+              <span class="school-info">
+                <span class="school-name">Obchodní akademie Tomáše Bati</span>
+                <span class="school-meta"><span>Zlín</span><span>·</span><span>OA</span></span>
+              </span>
+              <span class="school-rating">
+                <span class="school-score"><img src="assets/icons/star.svg" alt="">4.5</span>
+                <span class="school-reviews">190 reviews</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="school-row" href="school.html">
+              <span class="school-rank">4</span>
+              <span class="school-thumb"><img src="assets/img/supsuh.jpg" alt=""></span>
+              <span class="school-info">
+                <span class="school-name">Střední uměleckoprůmyslová škola Uherské Hradiště</span>
+                <span class="school-meta"><span>Uherské Hradiště</span><span>·</span><span>SUPŠ</span></span>
+              </span>
+              <span class="school-rating">
+                <span class="school-score"><img src="assets/icons/star.svg" alt="">4.4</span>
+                <span class="school-reviews">143 reviews</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="school-row" href="school.html">
+              <span class="school-rank">5</span>
+              <span class="school-thumb"><img src="assets/img/spss-olomouc.jpg" alt=""></span>
+              <span class="school-info">
+                <span class="school-name">SPŠ strojnická Olomouc</span>
+                <span class="school-meta"><span>Olomouc</span><span>·</span><span>SPŠ</span></span>
+              </span>
+              <span class="school-rating">
+                <span class="school-score"><img src="assets/icons/star.svg" alt="">4.3</span>
+                <span class="school-reviews">221 reviews</span>
+              </span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Latest reviews -->
+    <section class="latest">
+      <div class="container">
+        <h2 class="section-title">Latest reviews</h2>
+        <div class="quote-grid">
+          <article class="quote-card">
+            <span class="quote-mark">“</span>
+            <blockquote>Teachers actually care whether you understand the topic. The cyber security lab is the best part of the week.</blockquote>
+            <p class="quote-author">Student, class of 2026
+              <a class="quote-school" href="school.html">Smíchovská střední škola</a>
+            </p>
+          </article>
+          <article class="quote-card">
+            <span class="quote-mark">“</span>
+            <blockquote>Good communication with parents and fair grading. The canteen food could be better.</blockquote>
+            <p class="quote-author">Anonymous · Parent
+              <a class="quote-school" href="school.html">Gymnázium Brno, třída Kapitána Jaroše</a>
+            </p>
+          </article>
+          <article class="quote-card">
+            <span class="quote-mark">“</span>
+            <blockquote>Prepared me well for university. The accounting classes are tough, but the internships make up for it.</blockquote>
+            <p class="quote-author">Former student, 2024
+              <a class="quote-school" href="school.html">Obchodní akademie Tomáše Bati</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><img src="assets/icons/logo-light.svg" alt="">SchoolScore</a>
+        <p>Honest school reviews from anyone who knows the school.</p>
+        <p class="footer-small">© 2026 SchoolScore · Prototype: ratings and reviews are sample data.<br>School photos: <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>, CC BY-SA.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="schools.html">Rankings</a></li>
+            <li><a href="schools.html">Schools</a></li>
+            <li><a href="schools.html">Regions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Review rules</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

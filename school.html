@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smíchovská střední škola – SchoolScore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/icons/logo.svg" alt="">SchoolScore</a>
+      <nav class="nav">
+        <a class="is-active" href="schools.html">Schools</a>
+        <a href="about.html">About us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- School header -->
+    <section class="school-header">
+      <div class="container">
+        <div class="school-header-copy">
+          <p class="breadcrumb"><a href="index.html">Home</a> / <a href="schools.html">Schools</a> / Smíchovská střední škola</p>
+          <h1>Smíchovská střední škola</h1>
+          <div class="chips">
+            <span class="chip">Prague</span>
+            <span class="chip">SPŠ</span>
+            <span class="chip">Public</span>
+          </div>
+          <p class="school-desc">A public technical secondary school in Prague-Smíchov, founded in 1901. It teaches information technology and cyber security alongside hospitality, tourism and general lyceum programmes. Students praise the modern IT labs and teachers, but mention crowded corridors between lessons.</p>
+        </div>
+
+        <aside class="score-card">
+          <span class="score-value">4.8</span>
+          <span class="stars">
+            <img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt="">
+          </span>
+          <span>312 reviews</span>
+          <a class="btn btn-light" href="#write-review">Write a review</a>
+        </aside>
+      </div>
+    </section>
+
+    <div class="container school-body">
+
+      <!-- Reviews -->
+      <section class="reviews">
+        <h2>Reviews (312)</h2>
+
+        <article class="review">
+          <div class="review-head">
+            <span>Student, class of 2026</span>
+            <span class="stars"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></span>
+          </div>
+          <p>Teachers actually care whether you understand the topic. The cyber security lab is the best part of the week.</p>
+          <time datetime="2026-10-12">12 Oct 2026</time>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <span>Anonymous · Parent</span>
+            <span class="stars"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img class="off" src="assets/icons/star.svg" alt=""></span>
+          </div>
+          <p>Good communication with parents and fair grading. The canteen food could be better.</p>
+          <time datetime="2026-10-03">3 Oct 2026</time>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <span>Former student, 2024</span>
+            <span class="stars"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img class="off" src="assets/icons/star.svg" alt=""></span>
+          </div>
+          <p>Prepared me well for university. Old gym, but the new IT labs make up for it.</p>
+          <time datetime="2026-09-21">21 Sep 2026</time>
+        </article>
+
+        <article class="review">
+          <div class="review-head">
+            <span>Tomáš K. · Student</span>
+            <span class="stars"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></span>
+          </div>
+          <p>Lots of practical projects and a great hackathon every spring. You learn real programming, not just theory.</p>
+          <time datetime="2026-09-14">14 Sep 2026</time>
+        </article>
+
+        <!-- Write a review -->
+        <form class="review-form" id="write-review" action="#">
+          <h3>Write a review</h3>
+          <p>No account needed. It only takes two minutes.</p>
+
+          <div class="field">
+            <label for="name">Your name (optional)</label>
+            <input id="name" type="text" placeholder="Leave empty to post as Anonymous">
+          </div>
+
+          <div class="field">
+            <span class="label">I am a</span>
+            <div class="chips">
+              <span class="chip is-selected">Student</span>
+              <span class="chip">Parent</span>
+              <span class="chip">Former student</span>
+              <span class="chip">Teacher</span>
+              <span class="chip">Other</span>
+            </div>
+          </div>
+
+          <fieldset class="field rating-field">
+            <legend class="label">Your rating</legend>
+            <div class="rating-row">
+              <!-- Radios are listed 5 → 1 and shown reversed, so "~" can light up every star to the left -->
+              <div class="star-input">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="Excellent"><span class="sr-only">5 stars</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.08L12.42 7.25L18.08 7.83L13.83 11.67L15.08 17.25L10 14.42L4.92 17.25L6.17 11.67L1.92 7.83L7.58 7.25Z"/></svg></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Very good"><span class="sr-only">4 stars</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.08L12.42 7.25L18.08 7.83L13.83 11.67L15.08 17.25L10 14.42L4.92 17.25L6.17 11.67L1.92 7.83L7.58 7.25Z"/></svg></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Okay"><span class="sr-only">3 stars</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.08L12.42 7.25L18.08 7.83L13.83 11.67L15.08 17.25L10 14.42L4.92 17.25L6.17 11.67L1.92 7.83L7.58 7.25Z"/></svg></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Poor"><span class="sr-only">2 stars</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.08L12.42 7.25L18.08 7.83L13.83 11.67L15.08 17.25L10 14.42L4.92 17.25L6.17 11.67L1.92 7.83L7.58 7.25Z"/></svg></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="Very poor"><span class="sr-only">1 star</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.08L12.42 7.25L18.08 7.83L13.83 11.67L15.08 17.25L10 14.42L4.92 17.25L6.17 11.67L1.92 7.83L7.58 7.25Z"/></svg></label>
+              </div>
+              <span class="star-hint" aria-hidden="true"></span>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="review">Your review</label>
+            <textarea id="review" placeholder="What is good about the school, and what could be better?"></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button class="btn btn-primary" type="button">Publish review</button>
+            <span>By publishing you agree to the review rules.</span>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <figure class="school-photo">
+          <img src="assets/img/smichovska.jpg" alt="Main building of Smíchovská střední škola in Prague">
+        </figure>
+        <div class="facts">
+          <h3>Quick facts</h3>
+          <dl>
+            <div><dt>Type</dt><dd>Technical secondary</dd></div>
+            <div><dt>City</dt><dd>Prague</dd></div>
+            <div><dt>Students</dt><dd>700</dd></div>
+            <div><dt>Founded</dt><dd>1901</dd></div>
+            <div><dt>Website</dt><dd><a href="https://www.ssps.cz">ssps.cz</a></dd></div>
+          </dl>
+        </div>
+        <div class="facts">
+          <h3>Programmes</h3>
+          <ul class="programmes">
+            <li class="chip">Information technology</li>
+            <li class="chip">Cyber security</li>
+            <li class="chip">Gymnázium</li>
+            <li class="chip">Hospitality</li>
+            <li class="chip">Tourism</li>
+            <li class="chip">General lyceum</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><img src="assets/icons/logo-light.svg" alt="">SchoolScore</a>
+        <p>Honest school reviews from anyone who knows the school.</p>
+        <p class="footer-small">© 2026 SchoolScore · Prototype: ratings and reviews are sample data.<br>School photos: <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>, CC BY-SA.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="schools.html">Rankings</a></li>
+            <li><a href="schools.html">Schools</a></li>
+            <li><a href="schools.html">Regions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Review rules</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
